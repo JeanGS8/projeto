@@ -19,6 +19,6 @@ export class Produto{
     data_ven: Date;
 
     @IsNotEmpty()
-    @Column({nullable: false})
+    @Column({nullable: false, type: "float"})
     preco: number;
 }
